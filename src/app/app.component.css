@@ -1,0 +1,20 @@
+.navbar {
+    box-shadow: 0 2px .4px  lightgray;
+}
+
+
+.item-active {
+    position: relative;
+    color: red !important; 
+} 
+.item-active::after {
+    content: '';
+    background-color: red;
+
+    height: 3px;
+    width: 100%;
+    
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}

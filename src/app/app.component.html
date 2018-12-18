@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light px-5">
+    <a class="navbar-brand" href="#">Mi<strong style="color: red;">Claro</strong> <small> dashboard</small></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link item-hov" href routerLink="/home" routerLinkActive="item-active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link item-hov" href routerLink="/stadistics" routerLinkActive="item-active">Estadísticas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link item-hov" href routerLink="/catalogs" routerLinkActive="item-active">Catálogos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link item-hov" href routerLink="/technical-visits" routerLinkActive="item-active">Visitas técnicas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link item-hov" href routerLink="/admin" routerLinkActive="item-active">Administración</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link item-hov" href routerLink="/users" routerLinkActive="item-active">Usuarios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: red;" href>() Admin QA wigilabs</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="mx-5 mt-5">
+    <router-outlet></router-outlet>
+</div>
