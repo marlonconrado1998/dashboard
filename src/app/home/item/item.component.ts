@@ -1,32 +1,36 @@
+
 import { Component, OnInit } from '@angular/core';
 
+// models 
+import { Item } from './item.model';
+
 @Component({
-  selector: 'home-item-router',
-  templateUrl: './item-router.component.html',
-  styleUrls: ['./item-router.component.css']
+  selector: 'home-item',
+  templateUrl: './item.component.html',
+  styleUrls: ['./item.component.css']
 })
-export class ItemRouterComponent implements OnInit {
+export class ItemComponent implements OnInit {
 
 
-  items = [{
+  items: Item[] = [{
     name: "Estadísticas",
-    img: "",
+    img: "./../../../assets/icons/icon_estadisticas.svg",
     listSubItems: ['Resumen', 'Reportes diarios', 'Time outs', 'Seguimiento', 'Detalle de', 'Dashboard', 'Reporte', 'Integración']
-  },{
+  }, {
     name: "Catálogos",
-    img: "",
+    img: "./../../../assets/icons/icon_catalogo.svg",
     listSubItems: ['Reposiciones', 'Venta de tecnología', 'Planes y paquetes', 'Sugerencia y equipos']
-  },{
+  }, {
     name: "Visitas técnicas",
-    img: "",
+    img: "./../../../assets/icons/icon_visitatecnica.svg",
     listSubItems: ['GPS']
-  },{
+  }, {
     name: "Usuarios",
-    img: "",
+    img: "./../../../assets/icons/icon_usuarios.svg",
     listSubItems: ['Eliminación de usuarios']
-  },{
+  }, {
     name: "Administrador",
-    img: "",
+    img: "./../../../assets/icons/icon_administrador.svg",
     listSubItems: ['Banners', 'Tokens', 'Homologación', 'Segmentos', 'Pedidos EXT', 'Pedidos App']
   }];
 

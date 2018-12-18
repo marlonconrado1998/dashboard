@@ -1,9 +1,0 @@
-.item {
-    box-shadow: 1px 1px 4px 0 lightgray, 1px 0 2px 0 lightgray;
-    border-radius: 4px;
-}
-
-.sub-item:hover {
-    color: red;
-    cursor: pointer;
-}

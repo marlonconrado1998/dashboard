@@ -2,8 +2,9 @@
 // modules 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppRoutingModule } from './app-routing.module';
+
 import { HomeModule } from './home/home.module';
 import { AdminModule } from './admin/admin.module';
 import { CatalogsModule } from './catalogs/catalogs.module';

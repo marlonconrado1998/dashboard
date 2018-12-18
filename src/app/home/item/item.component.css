@@ -1,0 +1,9 @@
+.item {
+    box-shadow: 3px 2px 8px 0 #DEDEDE;
+    border-radius: 4px;
+}
+
+.sub-item:hover {
+    color: #EF3829;
+    cursor: pointer;
+}

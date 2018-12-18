@@ -5,10 +5,10 @@ import { CommonModule } from '@angular/common';
 
 // components
 import { HomeComponent } from './home.component';
-import { ItemRouterComponent } from './item-router/item-router.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
-  declarations: [ItemRouterComponent, HomeComponent],
+  declarations: [ItemComponent, HomeComponent],
   imports: [
     CommonModule
   ],
