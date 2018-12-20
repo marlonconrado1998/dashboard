@@ -11,7 +11,6 @@ import { Item } from './item.model';
 })
 export class ItemComponent implements OnInit {
 
-
   items: Item[] = [{
     name: "Estadísticas",
     img: "./../../../assets/icons/icon_estadisticas.svg",

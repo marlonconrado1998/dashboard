@@ -3,6 +3,10 @@
     border-radius: 4px;
 }
 
+.item-img {
+    width: 11rem; 
+    height: 9rem;
+}
 .sub-item:hover {
     color: #EF3829;
     cursor: pointer;

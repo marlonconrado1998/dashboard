@@ -4,35 +4,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
-
-import { HomeModule } from './home/home.module';
-import { AdminModule } from './admin/admin.module';
-import { CatalogsModule } from './catalogs/catalogs.module';
-import { StadisticsModule } from './stadistics/stadistics.module';
-import { TechnicalVisitsModule } from './technical-visits/technical-visits.module';
-import { UserSessionModule } from './user-session/user-session.module';
-import { UsersModule } from './users/users.module';
+import { CoreModule } from './core/core.module';
 
 // components 
 import { AppComponent } from './app.component';
 
+// providers 
+import { UserSessionService } from './user-session/shared/user-session.service';
+import { LoginComponent } from './login/login.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HomeModule,
-    AdminModule,
-    CatalogsModule,
-    StadisticsModule,
-    TechnicalVisitsModule,
-    UserSessionModule,
-    UsersModule
+    CoreModule
   ],
-  providers: [],
+  providers: [UserSessionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

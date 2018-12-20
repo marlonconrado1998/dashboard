@@ -1,0 +1,25 @@
+.navbar {
+    box-shadow: 0 2px 4px  lightgray;
+}
+
+.item-active {
+    position: relative;
+    color: #EF3829 !important; 
+} 
+
+.item-active::after {
+    content: '';
+    background-color: #EF3829;
+
+    height: 4px;
+    width: 100%;
+    
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+}
+
+.item-hov li {
+    font-weight: 450;
+    color: #707070;
+}
